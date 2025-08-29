@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/eslint',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@sidebase/nuxt-auth'
   ],
   pwa: {
     manifest: {
