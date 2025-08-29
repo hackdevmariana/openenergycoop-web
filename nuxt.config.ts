@@ -1,7 +1,11 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/pwa', '@nuxt/icon'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxt/icon',
+    '@nuxt/image'
+  ],
   pwa: {
     manifest: {
       name: 'Electricity Price Web',
