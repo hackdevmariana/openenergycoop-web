@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@nuxtjs/pwa',
     '@nuxt/icon',
     '@nuxt/image',
-    '@nuxt/eslint'
+    '@nuxt/eslint',
+    '@pinia/nuxt'
   ],
   pwa: {
     manifest: {
