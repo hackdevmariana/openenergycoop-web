@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/pwa',
+    '@vite-pwa/nuxt',
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/eslint',
@@ -12,12 +12,20 @@ export default defineNuxtConfig({
     '@nuxt/content',
   ],
   pwa: {
-    manifest: {
-      name: 'Electricity Price Web',
-      short_name: 'PriceWeb',
-      lang: 'es',
-      theme_color: '#ffffff'
-    }
+    registerType: 'autoUpdate',
+    workbox: {
+      navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+    },
+    client: {
+      installPrompt: true,
+    },
+    devOptions: {
+      enabled: true,
+      suppressWarnings: true,
+      navigateFallbackAllowlist: [/^\/$/],
+      type: 'module',
+    },
   },
   app: {
     head: {
