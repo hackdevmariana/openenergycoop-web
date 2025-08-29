@@ -17,6 +17,7 @@
     "@nuxt/ui": "^3.3.2",
     "@nuxtjs/pwa": "^3.3.5",
     "@vueuse/core": "^13.8.0",
+    "@vueuse/head": "^2.0.0",
     "eslint": "^9.34.0",
     "nuxt": "^4.0.3",
     "pinia": "^3.0.3",
