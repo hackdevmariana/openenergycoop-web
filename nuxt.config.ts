@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@sidebase/nuxt-auth',
     '@nuxtjs/tailwindcss',
+    '@nuxt/content',
   ],
   pwa: {
     manifest: {
